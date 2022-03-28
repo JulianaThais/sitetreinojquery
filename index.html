@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>ConstróiBem</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.03/jquery.cycle.all.min.js"></script>
+<script>
+$(function() {
+$("#slides p").cycle({
+fx: 'zoom',
+speed: 1000,
+timeout: 2000,
+prev : '#prev',
+next : '#next'
+})
+})
+</script>
+
+</head>
+
+
+
+<header>
+    
+  <div class="container-fluid">
+                  
+                         
+        </div>
+
+   
+    <ul>
+        <li id="preto"><a href="#inicio">Inicio</a></li>
+        <li id="preto"><a href="#sobre"> Sobre Nós: </a></li>
+        <li id="preto"><a href="#novo">Novos Empreendimentos</a></li>
+        <li id="preto"><a href="#flip">Fale Conosco</a></li>
+        </ul>
+    </header>
+    <div>  <br>
+     <section>
+        
+            <div>
+                
+                <h3 id="inicio">Construtora ConstróiBem</h3>
+                <h2>Na ConstróiBem prezamos sempre o conforto de nossos clientes e a qualidade de nossos serviços. Mais que uma prestadora de serviços somos uma familia.</h2>
+
+                   <img id="block1" src="images/const.jpg" alt="Predio Residencial" data-position="center center" />
+                   <img id="block2" src="images/images (1).jpg" alt="Predio Residencial" data-position="center center" />
+                   <img id="block3" src="images/images.jpg" alt="Predio Residencial" data-position="center center" />            
+                   <img id="block4" src="images/projeto.jpg" alt="Predio Residencial" data-position="center center" /><br>
+                  <h1 id="sobre">*Clique 2 vezes na imagem para aumentar o tamanho</h1>              </div>
+
+
+
+
+
+                   
+                   <button id="shower">Saiba mais sobre nós</button>
+                   <button id="hider">Fechar</button>
+                   <div><span><p style="display: none">	Sonhar é um dos princípios mais básicos e fundamentais da essência do ser humano, é condição, é imposição.
+
+                    Sonhar é vida e conquistar um sonho é como conquistar um pedaço da vida; é realização e é triunfo!
+                    
+                    Mas nada disso será possível sem que lutemos por isso, sem que haja persistência, sem que sejamos fiéis aos nossos sonhos e deles nunca desistamos! </p></span>
+                     </div>
+    </div>
+
+     </section>
+   <div class ="row m-4 text-primary" >
+        <div class="col-sm-5" >
+            
+
+            <div>
+                
+       <h3 id="novo">Condominios residenciais</h3>
+       <h2>Condominios com excelentes localizações, area de lazer, garagem individual...</h2>
+          <img id="block5" src="images/download (5).jpg" alt="Predio Residencial" data-position="center center" /></a><br> <br>
+          Ver mais:
+          <div id="slide">
+            <img id="img1" src="images/cond.jpg " alt="">
+            <img id="img1"src="images/download (4).jpg" alt="">
+            <img id="img1"src="images/cond2.jpg" alt="">
+            <img id="img1"src="images/cond4.jpg" alt="">
+          </div>
+            </div>
+            </div>
+            <div>
+                <h3>Galpões comerciais</h3>
+                <h2>Os galpões comerciais podem ter um único pavimento ou mais...</h2><br>
+                <img id="block6" src="images/gal.jpg" alt="Predio Residencial" data-position="center center" /></a><br>
+              
+                   
+           
+        </div>
+        <div id="slides">
+          <h3>Apartamentos mobiliados</h3><br>
+          <p>
+          <img src="images/ap3.jpg" title="imagem 01">
+          <img src="images/ap1.jpg " title="imagem 02">
+          <img src="images/ap2.jpg" title="imagem 03">
+          <img src="images/ap.jpg" title="imagem 04">
+          </p>
+          </div>
+          <p>
+          <a href="#" id="prev">Anterior</a> 
+          <a href="#" id="next">Pr&oacute;xima</a>
+          </p>
+        </div>
+      </div>
+               
+                       
+                       
+    <footer>
+      <div id="flip">Mais Informações? Preencha este formulario que entramos em contato:</div>
+<div id="panel"><form>
+  Nome Completo:<br>
+
+ <input type="text" name="firstname">
+ <br>
+
+ CPF:<br>
+ <input type="text" name="CPF">
+ <br>
+
+ Nome da Mãe:<br>
+
+ <input type="text" name="name">
+ <br>
+ Email:<br>
+
+ <input type="email" name="Email">
+ <br>
+ Telefone de Contato:<br>
+
+ <input type="tel" name="tel">
+ <br>
+ 
+ <button id="botao">Enviar</button> 
+   
+ </form>
+ </div>
+ <a href="" id="facebook-share-btt" rel="nofollow" target="_blank" class="facebook-share-button"></a>
+ <a href="" id="whatsapp-share-btt" rel="nofollow" target="_blank" class="whatsapp-share-button"></a> 
+</footer>
+
+    
+<script>
+  $(function() {
+$("#slide3").cycle({
+fx: 'zoom',
+speed: 1000,
+timeout: 2000,
+prev : '#prev',
+next : '#next'
+})
+})
+  
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+ $( document.body ).click(function () {
+  if ( $( "#slide" ).first().is( ":hidden" ) ) {
+    $( "#slide" ).slideDown( "slow" );
+  } else {
+    $( "#slide" ).hide();
+  }
+});
+$( document.body ).click(function () {
+  if ( $( "#slide2" ).first().is( ":hidden" ) ) {
+    $( "#slide2" ).slideDown( "slow" );
+  } else {
+    $( "#slide2" ).hide();
+  }
+});
+
+    $( "#hider" ).click(function() {
+      $( "span:last-child" ).hide( "fast", function() {
+        // Use arguments.callee so we don't need a named function
+        $( this ).prev().hide( "fast", arguments.callee );
+      });
+    });
+    $( "#shower" ).click(function() {
+      $( "span" ).show( 2000 );
+    });
+    </script>
+   
+   
+  <script>
+  $( "button" ).click(function() {
+    $( "p" ).show( "slow" );
+  });
+  $( "#block1" ).dblclick(function() {
+  $( "#block1" )
+    .animate({
+      width: "100%"
+    });
+}); 
+ 
+$( "#block1" ).click(function() {
+  $( "img" ).css({
+    width: "",
+    fontSize: "",
+    borderWidth: ""
+  });
+});
+$( "#block2" ).dblclick(function() {
+  $( "#block2" )
+    .animate({
+      width: "100%"
+    });
+}); 
+$( "#block2" ).click(function() {
+  $( "img" ).css({
+    width: "",
+    fontSize: "",
+    borderWidth: ""
+  });
+});
+$( "#block3" ).dblclick(function() {
+  $( "#block3" )
+    .animate({
+      width: "100%"
+    });
+}); 
+  
+$( "#block3" ).click(function() {
+  $( "img" ).css({
+    width: "",
+    fontSize: "",
+    borderWidth: ""
+  });
+});
+$( "#block4" ).dblclick(function() {
+  $( "#block4" )
+    .animate({
+      width: "100%"
+    });
+}); 
+$( "#block4" ).click(function() {
+  $( "img" ).css({
+    width: "",
+    fontSize: "",
+    borderWidth: ""
+  });
+});
+$( "#block5" ).dblclick(function() {
+  $( "#block5" )
+    .animate({
+      width: "200%"
+    });
+});  
+$( "#block5" ).click(function() {
+  $( "img" ).css({
+    width: "",
+    fontSize: "",
+    borderWidth: ""
+  });
+});
+$( "#block6" ).dblclick(function() {
+  $( "#block6" )
+    .animate({
+      width: "100%"
+    });
+}); 
+ 
+$( "#block6" ).click(function() {
+  $( "img" ).css({
+    width: "",
+    fontSize: "",
+    borderWidth: ""
+  });
+});
+
+  </script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+    
+    $("#botao").click(function() {
+    
+    alert('Agradecemos a mensagem, entraremos em contato em ate duas horas após preenchimento');
+    
+    });
+    
+    });
+
+ 
+    
+    </script>
+   
+
+
+
+
+
+
+
+</body>
+
+
+</html>
